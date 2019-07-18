@@ -36,12 +36,14 @@ const Footer = ({ siteTitle }) => (
             fontFamily: "Roboto, sans-serif",
           }}
         >
-          <PVBFacebook
+          <div
             style={{
               float: "right",
               maxHeight: "25px",
             }}
-          />
+          >
+            <PVBFacebook />
+          </div>
         </a>
       </p>
     </div>

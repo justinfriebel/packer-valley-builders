@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import BrickTile from "../images/brick-tile.png"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
@@ -18,7 +19,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div
+      style={{
+        backgroundImage: `url(${BrickTile})`,
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -29,11 +34,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Footer>
-          <Footer siteTitle={data.site.siteMetadata.title} />
-        </Footer>
       </div>
-    </>
+      <Footer siteTitle={data.site.siteMetadata.title} />
+    </div>
   )
 }
 
