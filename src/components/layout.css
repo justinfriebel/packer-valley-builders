@@ -669,7 +669,7 @@ pre tt:after {
   cursor: default;
   display: flex;
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-stretch: 100%;
   font-style: normal;
   font-variant-caps: normal;
@@ -677,7 +677,7 @@ pre tt:after {
   font-variant-ligatures: normal;
   font-variant-numeric: normal;
   font-weight: 500;
-  height: 36px;
+  height: 44px;
   justify-content: center;
   letter-spacing: 1.25px;
   line-height: normal;
@@ -686,6 +686,7 @@ pre tt:after {
   margin-right: 32px;
   margin-top: 16px;
   min-width: 130px;
+  max-width: 200px;
   outline-color: rgb(255, 255, 255);
   outline-style: none;
   outline-width: 0px;

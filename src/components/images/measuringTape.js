@@ -7,7 +7,7 @@ const MeasuringTape = () => {
     query {
       placeholderImage: file(relativePath: { eq: "measuring-tape.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid
           }
         }

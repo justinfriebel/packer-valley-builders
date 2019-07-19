@@ -22,6 +22,11 @@ const Footer = ({ siteTitle }) => (
           style={{
             color: "#FFFFFF",
             textDecoration: "none",
+            fontFamily:
+              "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+            textRendering: "optimizeLegibility",
+            fontSize: "0.90rem",
+            lineHeight: "1.1",
           }}
         >
           &copy; {siteTitle} {new Date().getFullYear()}

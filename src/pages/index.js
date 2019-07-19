@@ -23,7 +23,7 @@ const IndexPage = () => (
     >
       <MeasuringTape />
     </div>
-    <div
+    {/* <div
       className="flex-row"
       style={{
         margin: "0 auto",
@@ -33,7 +33,7 @@ const IndexPage = () => (
     >
       <h2 className="flex-column">See how we measure up</h2>
       <button className="primary-button flex-column">See Projects</button>
-    </div>
+    </div> */}
     <div
       style={{
         margin: "0 auto",
@@ -84,8 +84,10 @@ const IndexPage = () => (
           padding: "1.45rem 1.0875rem",
         }}
       >
-        <button className="primary-button flex-column">Call us</button>
-        <button className="primary-button flex-column">Email us</button>
+        <a className="primary-button flex-column" href="tel:+1-920-232-7620">
+          Call us
+        </a>
+        {/* <button className="primary-button flex-column">Email us</button> */}
       </div>
     </div>
   </Layout>
