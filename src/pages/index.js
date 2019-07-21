@@ -16,11 +16,7 @@ const IndexPage = () => (
         <ChrisDave />
       </div>
     </div>
-    <div
-      style={{
-        marginTop: "-20%",
-      }}
-    >
+    <div className="measuring-tape">
       <MeasuringTape />
     </div>
     {/* <div
