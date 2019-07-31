@@ -3,26 +3,33 @@ import Link from "gatsby-link"
 import styled from "styled-components"
 
 const Header = ({ siteTitle }) => (
-  <StyledHeader>
-    <StyledLogo to="/">{siteTitle}</StyledLogo>
-    <StyledNav>
-      <StyledMenuItemsWrapper>
-        <StyledMenuItem to="/about">About</StyledMenuItem>
-        <StyledMenuItem to="/services">Services</StyledMenuItem>
-        <StyledMenuItem to="/projects">Projects</StyledMenuItem>
-        <StyledMenuItem to="/contact">Contact</StyledMenuItem>
-      </StyledMenuItemsWrapper>
-    </StyledNav>
-  </StyledHeader>
+  <HeaderContainer>
+    <StyledHeader>
+      <StyledLogo to="/">{siteTitle}</StyledLogo>
+      <StyledNav>
+        <StyledMenuItemsWrapper>
+          <StyledMenuItem to="/about">About</StyledMenuItem>
+          <StyledMenuItem to="/services">Services</StyledMenuItem>
+          <StyledMenuItem to="/projects">Projects</StyledMenuItem>
+          <StyledMenuItem to="/contact">Contact</StyledMenuItem>
+        </StyledMenuItemsWrapper>
+      </StyledNav>
+    </StyledHeader>
+  </HeaderContainer>
 )
 
-const StyledHeader = styled.header`
+const HeaderContainer = styled.header`
+  background-color: #0c5900;
+  border-bottom: 1px solid #ccc;
+`
+
+const StyledHeader = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   padding: 20px 10px;
-  border-bottom: 1px solid #ccc;
-  background-color: #0c5900;
+  max-width: 960px;
+  margin: 0 auto;
 `
 
 const StyledLogo = styled(Link)`
