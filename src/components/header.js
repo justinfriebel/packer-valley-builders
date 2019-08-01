@@ -2,6 +2,8 @@ import React from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
 
+import CallUs from "./callUs"
+
 const Header = ({ siteTitle }) => (
   <HeaderContainer>
     <StyledHeader>
@@ -10,8 +12,8 @@ const Header = ({ siteTitle }) => (
         <StyledMenuItemsWrapper>
           <StyledMenuItem to="/about">About</StyledMenuItem>
           <StyledMenuItem to="/services">Services</StyledMenuItem>
-          <StyledMenuItem to="/projects">Projects</StyledMenuItem>
-          <StyledMenuItem to="/contact">Contact</StyledMenuItem>
+          {/* <StyledMenuItem to="/projects">Projects</StyledMenuItem> */}
+          <CallUs />
         </StyledMenuItemsWrapper>
       </StyledNav>
     </StyledHeader>
@@ -67,6 +69,8 @@ const StyledMenuItem = styled(Link)`
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
+  align-items: center;
+  display: flex;
 `
 
 export default Header

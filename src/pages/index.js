@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import ChrisDave from "../components/images/crisDave"
 import MeasuringTape from "../components/images/measuringTape"
+import CallUs from "../components/callUs"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -110,10 +111,7 @@ const IndexPage = () => (
           padding: "1.45rem 1.0875rem",
         }}
       >
-        <a className="primary-button flex-column" href="tel:+1-920-232-7620">
-          Call us
-        </a>
-        {/* <button className="primary-button flex-column">Email us</button> */}
+        <CallUs />
       </div>
     </div>
   </Layout>
