@@ -4,9 +4,9 @@ const CallUs = () => (
   <a
     className="primary-button flex-column"
     href="tel:+1-920-232-7620"
-    style={{ marginTop: 0, marginBottom: 0 }}
+    style={{ marginTop: 0, marginBottom: 0, fontSize: "0.9rem" }}
   >
-    Call us
+    920-232-7620
   </a>
 )
 
